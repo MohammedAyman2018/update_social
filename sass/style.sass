@@ -19,6 +19,7 @@ button
         &.share
             color: #edb23d !important
 
+
 // truncate
 .more
     display: none
@@ -27,6 +28,10 @@ button
 *
     direction: rtl !important
     text-align: right
+
+
+.note-editor.note-frame.panel.panel-default,.note-editor.note-frame.panel.panel-default *
+    direction: ltr !important
 p
     margin-bottom: 0 !important
 
@@ -56,8 +61,12 @@ body
     .tags
         max-height: 300px
         overflow-y: scroll
-        
+    
+// add posts
+textarea
+    resize: none
 
+    
 // start posts
 .posts
     margin-right: 25.333333%

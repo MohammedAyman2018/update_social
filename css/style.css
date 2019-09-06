@@ -30,6 +30,10 @@ button:hover.share {
   text-align: right;
 }
 
+.note-editor.note-frame.panel.panel-default, .note-editor.note-frame.panel.panel-default * {
+  direction: ltr !important;
+}
+
 p {
   margin-bottom: 0 !important;
 }
@@ -63,6 +67,10 @@ body {
 .tags-container .tags {
   max-height: 300px;
   overflow-y: scroll;
+}
+
+textarea {
+  resize: none;
 }
 
 .posts {
