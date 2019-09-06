@@ -34,6 +34,7 @@ $(document).ready(function () {
         
     }
 
+    // Truncate
     var open = $('.truncate');
     var close = $('.truncate-close');
 
