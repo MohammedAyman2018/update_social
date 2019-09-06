@@ -42,6 +42,12 @@ button:hover.share {
   outline: 1px solid slategrey;
 }
 
+.toast {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+}
+
 .note-editor.note-frame.panel.panel-default, .note-editor.note-frame.panel.panel-default * {
   direction: ltr !important;
 }
@@ -99,17 +105,27 @@ textarea {
 
 @media (max-width: 426px) {
   .posts {
-    margin-right: auto !important;
+    margin-right: 0 !important;
     margin-top: 0px !important;
   }
 }
 .dashbaord {
-  left: 50px !important;
   top: 80px !important;
 }
 .dashbaord .groups-rank .group-header img {
   height: 50px !important;
   width: 50px !important;
+}
+
+@media (max-width: 1025px) {
+  .dashbaord {
+    left: 0px !important;
+  }
+}
+@media (min-width: 1026px) {
+  .dashbaord {
+    left: 10px !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

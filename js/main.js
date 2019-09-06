@@ -1,7 +1,19 @@
 
 $(document).ready(function () {
+    $('.share').click(function (e) {
+        e.preventDefault();
+        var options = {
+            show: true,
+            animation : true,
+            autohide  : false,
+            delay     : 500
+        };
+
+        $('.toast').toast('show');
+
+    });
+
     $('[data-toggle="tooltip"]').tooltip();
-    $('.toast').toast('show');
 
     // like and dislike styling
 
