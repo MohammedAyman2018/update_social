@@ -1,0 +1,77 @@
+// general
+button
+    outline: none
+    box-shadow: none !important
+
+    &.like.active
+        color: #315be6 !important
+
+    &.dislike.active
+        color: #eb3434 !important
+
+    &:hover
+        &.like
+            color: #315be6 !important
+        &.comment
+            color: rgb(45, 137, 37) !important
+        &.dislike
+            color: #eb3434 !important
+        &.share
+            color: #edb23d !important
+
+// truncate
+.more
+    display: none
+
+    
+*
+    direction: rtl !important
+    text-align: right
+p
+    margin-bottom: 0 !important
+
+nav
+    padding: 10px !important
+    background-color: #000 !important
+
+    p
+        line-height: 1.5
+
+    .active p
+        border-bottom: 1px solid white
+        
+    a , span 
+       color: white !important
+    button
+        color: white !important
+        outline: none !important
+
+body
+    padding-top: 70px
+
+// Start tags
+.tags-container
+    right: 20px
+    top: 80px
+    .tags
+        max-height: 300px
+        overflow-y: scroll
+        
+
+// start posts
+.posts
+    margin-right: 25.333333%
+    margin-top: 20px
+
+    .post
+        &-header
+            *
+                user-select: none
+            img
+                height: 50px !important
+                width: 50px !important
+
+@media (max-width: 426px)
+    .posts
+        margin-right: auto !important
+        margin-top: 0px !important

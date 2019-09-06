@@ -1,0 +1,39 @@
+.posts.col-md-7.bg-white.shadow-sm.p-3.bg-white
+
+    - for (var i = 0; i < 2; ++i) {
+        .post.mb-2.bg-light.rounded.p-3
+            .container
+                .post-header
+                    .dropdown.float-left
+                        button.btn.fas.fa-ellipsis-h(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                        .dropdown-menu(aria-labelledby="dropdown").animated.flipInX.faster.mt-4
+                            button.dropdown-item(type="button") Action
+                            button.dropdown-item(type="button") Another action
+                            button.dropdown-item(type="button") Something else here
+
+                    img.rounded-circle.img-fluid(src="https://placeimg.com/640/480/any" width="75")
+                    h6.d-inline-block.my-auto.mx-2 الكلب هوهو
+                .post-content.py-3  
+                    p.pb-3 كلام عربي وانجليزي متداخل togther وهذا هو قمة الإعجاز العلمي 
+                    include actions.pug
+    - }
+
+    - for (var i = 0; i < 8; ++i) {
+
+        .post.mb-2.bg-light.rounded.p-3
+            .container
+                .post-header
+                    .dropdown.float-left
+                        button.btn.fas.fa-ellipsis-h(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                        .dropdown-menu(aria-labelledby="dropdown").animated.flipInX.faster.mt-4
+                            button.dropdown-item(type="button") Action
+                            button.dropdown-item(type="button") Another action
+                            button.dropdown-item(type="button") Something else here
+                    img.rounded-circle.img-fluid(src="https://placeimg.com/640/480/any" width="75")
+                    h6.d-inline-block.my-auto.mx-2 الكلب هوهو
+                .post-content.py-3
+                    p  هذا المقال هو نموذج لمقال من الممكن أن يوجد في الواقع وهو عبارة عن مقال طويل للغاية مرفق به صورة وهذا من الأشياء التي من الممكن أن تكون متحدية لبعض المطورين لكن نحن المطورين الممتازين يمكننا التعامل مع مثل هذه الأمور ببساطة لأنها أمور تافهة ولأننا من ابرع الناس في هذا المجال هههههه 
+                    img.img-fluid.mt-3(src="https://placeimg.com/640/580/any")
+                    include actions.pug
+
+    - }

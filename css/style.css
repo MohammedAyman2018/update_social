@@ -1,0 +1,87 @@
+button {
+  outline: none;
+  box-shadow: none !important;
+}
+button.like.active {
+  color: #315be6 !important;
+}
+button.dislike.active {
+  color: #eb3434 !important;
+}
+button:hover.like {
+  color: #315be6 !important;
+}
+button:hover.comment {
+  color: #2d8925 !important;
+}
+button:hover.dislike {
+  color: #eb3434 !important;
+}
+button:hover.share {
+  color: #edb23d !important;
+}
+
+.more {
+  display: none;
+}
+
+* {
+  direction: rtl !important;
+  text-align: right;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+nav {
+  padding: 10px !important;
+  background-color: #000 !important;
+}
+nav p {
+  line-height: 1.5;
+}
+nav .active p {
+  border-bottom: 1px solid white;
+}
+nav a, nav span {
+  color: white !important;
+}
+nav button {
+  color: white !important;
+  outline: none !important;
+}
+
+body {
+  padding-top: 70px;
+}
+
+.tags-container {
+  right: 20px;
+  top: 80px;
+}
+.tags-container .tags {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.posts {
+  margin-right: 25.333333%;
+  margin-top: 20px;
+}
+.posts .post-header * {
+  user-select: none;
+}
+.posts .post-header img {
+  height: 50px !important;
+  width: 50px !important;
+}
+
+@media (max-width: 426px) {
+  .posts {
+    margin-right: auto !important;
+    margin-top: 0px !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
