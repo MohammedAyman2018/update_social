@@ -30,6 +30,18 @@ button
     text-align: right
 
 
+    &::-webkit-scrollbar 
+        width: 1em
+
+    &::-webkit-scrollbar-track 
+        -webkit-box-shadow: inset 0 0 6px #6c23ebc2
+        border-radius: 20px
+
+    &::-webkit-scrollbar-thumb 
+        border-radius: 20px
+        background-color: black
+        outline: 1px solid slategrey
+
 .note-editor.note-frame.panel.panel-default,.note-editor.note-frame.panel.panel-default *
     direction: ltr !important
 p
@@ -84,3 +96,20 @@ textarea
     .posts
         margin-right: auto !important
         margin-top: 0px !important
+
+
+
+
+// start group rank
+.dashbaord
+    left: 50px !important
+    top: 80px !important
+
+    .groups-rank
+        .group
+            &-header
+                img
+                    height: 50px !important
+                    width: 50px !important
+
+
