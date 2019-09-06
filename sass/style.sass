@@ -99,21 +99,31 @@ textarea
         margin-top: 0px !important
 
 
-// start group rank
+// start dashbaord
 .dashbaord
     top: 80px !important
+    overflow-y: scroll
+    max-height: 100vh
 
+    // Start Group rank
     .groups-rank
-        max-height: 500px
+        max-height: 300px
         overflow-y: scroll
         .group
-            max-height: 300px
+            max-height: 200px
             overflow-y: scroll
             &-header
                 img
                     height: 50px !important
                     width: 50px !important
 
+    // start profile
+    .profile-wedgate
+        .profile
+            &-header
+                img
+                    height: 50px !important
+                    width: 50px !important
 @media (max-width: 1025px)
     .dashbaord
         left: 0px !important
@@ -121,3 +131,5 @@ textarea
 @media (min-width: 1026px)
     .dashbaord
         left: 10px !important
+
+    
