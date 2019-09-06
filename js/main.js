@@ -2,12 +2,6 @@
 $(document).ready(function () {
     $('.share').click(function (e) {
         e.preventDefault();
-        var options = {
-            show: true,
-            animation : true,
-            autohide  : false,
-            delay     : 500
-        };
 
         $('.toast').toast('show');
 
@@ -26,8 +20,7 @@ $(document).ready(function () {
 
     });
 
-    
-    var posts_captions = $('.post .post-content p');
+    var posts_captions = $('.post .post-content p , .tags p , .group .group-content p');
     
     for (var i of posts_captions) {
         // grap the element
