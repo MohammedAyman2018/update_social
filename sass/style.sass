@@ -44,7 +44,7 @@ button
     bottom: 10px
 
 .note-editor.note-frame.panel.panel-default,.note-editor.note-frame.panel.panel-default *
-    direction: ltr !important
+    direction: rtl !important
 p
     margin-bottom: 0 !important
 
@@ -85,6 +85,8 @@ textarea
     margin-right: 25.333333%
     margin-top: 20px
 
+    form
+
     .post
         &-header
             *
@@ -93,7 +95,11 @@ textarea
                 height: 50px !important
                 width: 50px !important
 
-@media (max-width: 768px)
+@media (max-width: 426px)
+    .posts
+        margin: 0 !important
+
+@media (min-width: 427px) and (max-width: 768px)
     .posts
         margin-right: 45.333333% !important
         margin-top: 0px !important

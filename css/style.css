@@ -44,7 +44,7 @@ button:hover.share {
 }
 
 .note-editor.note-frame.panel.panel-default, .note-editor.note-frame.panel.panel-default * {
-  direction: ltr !important;
+  direction: rtl !important;
 }
 
 p {
@@ -98,7 +98,12 @@ textarea {
   width: 50px !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 426px) {
+  .posts {
+    margin: 0 !important;
+  }
+}
+@media (min-width: 427px) and (max-width: 768px) {
   .posts {
     margin-right: 45.333333% !important;
     margin-top: 0px !important;

@@ -1,4 +1,20 @@
 .dashbaord.col-lg-4.d-none.d-lg-block.p-3.position-fixed.dashbaord
+    .profile-wedgate.my-2.rounded.p-3
+        .profile.mb-3.bg-light.p-3.shadow-sm
+            .profile-header.text-center
+                img.rounded-circle.img-fluid(src="https://placeimg.com/640/480/any" width="75")
+                h6.text-center.my-2 محمد أيمن
+            .profile-content.py-3
+                .badges.text-center
+                    h5.d-inline(data-toggle="tooltip" data-placement="top" title="رسائل")
+                        span.badge.badge-secondary.ml-2 <i class="far fa-comment-alt"></i> 120 
+                    h5.d-inline(data-toggle="tooltip" data-placement="top" title="متابعين")
+                        span.badge.badge-secondary.ml-2 <i class="fas fa-users"></i> 120 
+                    h5.d-inline(data-toggle="tooltip" data-placement="top" title="هاشتاجات تتابعها")
+                        span.badge.badge-secondary.ml-2 <i class="fas fa-hashtag"></i> 120 
+                    h5.d-inline(data-toggle="tooltip" data-placement="top" title="منشوراتك المحفوظة")
+                        span.badge.badge-secondary.ml-2 <i class="far fa-bookmark"></i> 120 
+
     .groups-rank.mb-2.rounded.p-3.bg-light.bg-white.shadow-sm
         h3 مختارات المجموعات
         - for (let i = 0; i < 5; ++i) {
@@ -12,12 +28,4 @@
                     include ./group/groups-actions.pug
         -}
     
-    .profile-wedgate.my-2.rounded.p-3.bg-light.bg-white.shadow-sm
-        h3 حسابك
-        .profile.mb-3.bg-light.p-3
-            .profile-header.text-center
-                img.rounded-circle.img-fluid(src="https://placeimg.com/640/480/any" width="75")
-                h6.text-center.my-2 محمد أيمن
-            .profile-content.py-3
-                
-                 
+    
