@@ -1,0 +1,15 @@
+.cover img {
+  max-height: 300px !important;
+  width: 100%; }
+
+.profile-pic img {
+  width: 150px;
+  height: 150px; }
+
+.container.position-relative {
+  bottom: 4em; }
+  .container.position-relative img {
+    width: 150px;
+    height: 150px; }
+
+/*# sourceMappingURL=profile.css.map */

@@ -1,0 +1,57 @@
+// general
+button
+    outline: none
+    box-shadow: none !important
+
+    &.like.active
+        color: #315be6 !important
+
+    &.dislike.active
+        color: #eb3434 !important
+
+    &:hover
+        &.like
+            color: #315be6 !important
+        &.comment
+            color: rgb(45, 137, 37) !important
+        &.dislike
+            color: #eb3434 !important
+        &.share
+            color: #edb23d !important
+
+// truncate
+.more
+    display: none
+
+*
+    direction: rtl !important
+    text-align: right
+
+    &::-webkit-scrollbar
+        width: 10px
+
+    &::-webkit-scrollbar-thumb
+        background-color: slategrey
+        outline: 1px solid slategrey
+
+.toast
+    display: none 
+    position: fixed
+    left: 10px
+    bottom: 10px
+p
+    margin-bottom: 0 !important
+nav
+    padding: 10px !important
+    background-color: #000 !important
+    p
+        line-height: 1.5
+    .active p
+        border-bottom: 1px solid white
+    a,span
+        color: white !important
+    button
+        color: white !important
+        outline: none !important
+body
+    padding-top: 60px

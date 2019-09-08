@@ -1,21 +1,22 @@
-nav.navbar.navbar-expand-md.position-fixed.fixed-top
-  a.navbar-brand(href="#") لوجو
-  button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
-    i.fas.fa-sliders-h
-  #navbarSupportedContent.collapse.navbar-collapse
-    ul.navbar-nav.ml-5.mr-auto
-      li.nav-item.active.mx-2
-        a.nav-link.text-center(href="#")
-          i.fas.fa-globe-africa.ml-1
-          p.d-inline-block
-            span الرئيسية
-      li.nav-item.mx-2
-        a.nav-link.text-center(href="#")
-          i.fas.fa-user.ml-1
-          p.d-inline-block
-            span  حسابك
-      li.nav-item.mx-2
-        a.nav-link.text-center(href="#")
-          i.fas.fa-cog.ml-1
-          p.d-inline-block
-            span  الإعدادات
+mixin nav(classes)
+  nav.navbar.navbar-expand-md.position-fixed.fixed-top
+    a.navbar-brand(href="#") لوجو
+    button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+      i.fas.fa-sliders-h
+    #navbarSupportedContent.collapse.navbar-collapse
+      ul.navbar-nav.ml-5.mr-auto
+        li.nav-item.mx-2(class=classes[0])
+          a.nav-link.text-center(href="index.html")
+            i.fas.fa-globe-africa.ml-1
+            p.d-inline-block
+              span الرئيسية
+        li.nav-item.mx-2(class=classes[1])
+          a.nav-link.text-center(href="profile.html")
+            i.fas.fa-user.ml-1
+            p.d-inline-block
+              span  حسابك
+        li.nav-item.mx-2(class=classes[2])
+          a.nav-link.text-center(href="#")
+            i.fas.fa-cog.ml-1
+            p.d-inline-block
+              span  الإعدادات

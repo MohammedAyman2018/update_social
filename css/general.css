@@ -1,0 +1,55 @@
+button {
+  outline: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important; }
+  button.like.active {
+    color: #315be6 !important; }
+  button.dislike.active {
+    color: #eb3434 !important; }
+  button:hover.like {
+    color: #315be6 !important; }
+  button:hover.comment {
+    color: #2d8925 !important; }
+  button:hover.dislike {
+    color: #eb3434 !important; }
+  button:hover.share {
+    color: #edb23d !important; }
+
+.more {
+  display: none; }
+
+* {
+  direction: rtl !important;
+  text-align: right; }
+  *::-webkit-scrollbar {
+    width: 10px; }
+  *::-webkit-scrollbar-thumb {
+    background-color: slategrey;
+    outline: 1px solid slategrey; }
+
+.toast {
+  display: none;
+  position: fixed;
+  left: 10px;
+  bottom: 10px; }
+
+p {
+  margin-bottom: 0 !important; }
+
+nav {
+  padding: 10px !important;
+  background-color: #000 !important; }
+  nav p {
+    line-height: 1.5; }
+  nav .active p {
+    border-bottom: 1px solid white; }
+  nav a, nav span {
+    color: white !important; }
+  nav button {
+    color: white !important;
+    outline: none !important; }
+
+body {
+  padding-top: 60px; }
+
+/*# sourceMappingURL=general.css.map */
