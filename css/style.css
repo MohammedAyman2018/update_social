@@ -90,6 +90,11 @@ textarea {
   margin-right: 25.333333%;
   margin-top: 20px;
 }
+.posts .editable {
+  border: 1px solid #000;
+  border-bottom: 0;
+  padding: 10px;
+}
 .posts .post-header * {
   user-select: none;
 }
