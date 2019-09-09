@@ -19,6 +19,12 @@
 .info {
   margin-top: 10em; }
   .info ul li {
-    text-align: center !important; }
+    text-align: center; }
+
+.friends a {
+  text-decoration: none; }
+.friends .friend img {
+  height: 100px !important;
+  width: 100px !important; }
 
 /*# sourceMappingURL=profile.css.map */
