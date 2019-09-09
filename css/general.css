@@ -1,7 +1,6 @@
 button {
   outline: none;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important; }
+  box-shadow: none !important; }
   button.like.active {
     color: #315be6 !important; }
   button.dislike.active {

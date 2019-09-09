@@ -6,10 +6,19 @@
   width: 150px;
   height: 150px; }
 
-.container.position-relative {
-  bottom: 4em; }
-  .container.position-relative img {
+.container.position-absolute {
+  bottom: -9em; }
+  .container.position-absolute img {
     width: 150px;
     height: 150px; }
+  .container.position-absolute::after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.info {
+  margin-top: 10em; }
+  .info ul li {
+    text-align: center !important; }
 
 /*# sourceMappingURL=profile.css.map */

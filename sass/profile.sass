@@ -7,9 +7,20 @@
         width: 150px
         height: 150px
 
-.container.position-relative
-    bottom: 4em
+.container.position-absolute
+    bottom: -9em
+
     img
         width: 150px
         height: 150px
 
+    &::after
+    
+        content: " "
+        display: block
+        clear: both
+
+.info
+    margin-top: 10em
+    ul li
+        text-align: center !important
