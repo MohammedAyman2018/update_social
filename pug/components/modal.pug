@@ -1,0 +1,17 @@
+mixin modal(btn_tybo,btn_class,title_tybo)
+
+    button.btn.btn-dark(type="button" class=btn_class data-toggle="modal" data-target="#exampleModalCenter")=btn_tybo
+
+    #exampleModalCenter.modal.fade.bd-example-modal-xl(tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true")
+        .modal-dialog.modal-xl
+            .modal-content
+                .modal-header
+                    h5(class="modal-title" id="exampleModalCenterTitle")=title_tybo
+                    button.btn.btn-dark(type="button" data-dismiss="modal" aria-label="Close")
+                        span(aria-hidden="true") ×
+                .modal-body
+                    #summernote أبدع شيئاً جميلاً
+
+                .modal-footer.justify-content-start
+                    button.btn.btn-secondary.mr-1(type="button" data-dismiss="modal") أغلق
+                    button.btn.btn-primary.mr-1(type="button") Save changes

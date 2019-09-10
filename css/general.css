@@ -51,4 +51,12 @@ nav {
 body {
   padding-top: 60px; }
 
+#summernote, #summernote *, .note-editor.note-frame.panel.panel-default, .note-editor.note-frame.panel.panel-default * {
+  direction: ltr !important; }
+
+.modal-header .close {
+  float: left;
+  padding: 0 !important;
+  margin: 0 !important; }
+
 /*# sourceMappingURL=general.css.map */

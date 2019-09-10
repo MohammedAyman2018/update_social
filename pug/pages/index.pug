@@ -10,6 +10,8 @@ html(lang="en")
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous")
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/medium-editor/5.23.3/css/medium-editor.css")
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/medium-editor/5.23.3/css/themes/default.min.css")
+
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-bs4.css" rel="stylesheet")
     title الرئيسية
     
   body
@@ -23,7 +25,7 @@ html(lang="en")
       .row
           include ../components/tags.pug
           include ../components/posts.pug
-          +posts("col-md-7 col-lg-5")
+          +posts("col-md-7 col-lg-5", "شخص رائع")
           include ../components/dashboard.pug
     include ../components/general/toast.pug
         
@@ -33,7 +35,10 @@ html(lang="en")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
     script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous")
     script(src="https://cdn.jsdelivr.net/npm/medium-editor@latest/dist/js/medium-editor.min.js")
-        
-    script(src="js/home.js")
-    script(src="js/main.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-bs4.js")
+
+
+    script(src="./js/ar.js")
+    script(src="./js/home.js")
+    script(src="./js/main.js")
 

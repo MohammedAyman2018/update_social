@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/medium-editor/5.23.3/css/medium-editor.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/medium-editor/5.23.3/css/themes/default.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-bs4.css" rel="stylesheet">
     <title>الرئيسية</title>
   </head>
   <body>
@@ -29,9 +30,25 @@
     <div class="container">
       <div class="row">
         <div class="posts col-xs-12 col-md-7 col-lg-5 bg-light shadow-sm p-2">
-          <h3>أضف مقالاً</h3>
-          <div class="editable"></div>
-          <button class="btn btn-dark float-left col-12">أضف منشوراً</button>
+          <h3 class="d-none d-sm-block">أضف مقالاً</h3>
+                    <button class="btn btn-dark add-post" type="button" data-toggle="modal" data-target="#exampleModalCenter">أضف منشوراً</button>
+                    <div class="modal fade bd-example-modal-xl" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalCenterTitle">أكتب شيئاً مفيداً</h5>
+                            <button class="btn btn-dark" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                          </div>
+                          <div class="modal-body">
+                            <div id="summernote">أبدع شيئاً جميلاً</div>
+                          </div>
+                          <div class="modal-footer justify-content-start">
+                            <button class="btn btn-secondary mr-1" type="button" data-dismiss="modal">أغلق</button>
+                            <button class="btn btn-primary mr-1" type="button">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
         </div>
       </div>
       <div class="row">
@@ -103,13 +120,13 @@
                       <div class="post-header">
                         <div class="dropdown float-left">
                           <button class="btn fas fa-ellipsis-h" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-                          <div class="dropdown-menu animated flipInX faster mt-4" aria-labelledby="dropdown">
+                          <div class="dropdown-menu animated pulse faster mt-4" aria-labelledby="dropdown">
                             <button class="dropdown-item text-right" type="button">أحظر كاتب المقال</button>
                             <button class="dropdown-item text-right" type="button">حفظ </button>
                             <button class="dropdown-item text-right" type="button">تابع كاتب المقال</button>
                           </div>
                         </div><img class="rounded-circle img-fluid" src="https://placeimg.com/640/480/any" width="75">
-                        <h6 class="d-inline-block my-auto mx-2">الكلب هوهو</h6>
+                        <h6 class="d-inline-block my-auto mx-2">شخص رائع</h6>
                       </div>
                       <div class="post-content py-3"> 
                         <p class="pb-3">كلام عربي وانجليزي متداخل togther وهذا هو قمة الإعجاز العلمي </p>
@@ -127,13 +144,13 @@
                       <div class="post-header">
                         <div class="dropdown float-left">
                           <button class="btn fas fa-ellipsis-h" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-                          <div class="dropdown-menu animated flipInX faster mt-4" aria-labelledby="dropdown">
+                          <div class="dropdown-menu animated pulse faster mt-4" aria-labelledby="dropdown">
                             <button class="dropdown-item text-right" type="button">أحظر كاتب المقال</button>
                             <button class="dropdown-item text-right" type="button">حفظ </button>
                             <button class="dropdown-item text-right" type="button">تابع كاتب المقال</button>
                           </div>
                         </div><img class="rounded-circle img-fluid" src="https://placeimg.com/640/480/any" width="75">
-                        <h6 class="d-inline-block my-auto mx-2">الكلب هوهو</h6>
+                        <h6 class="d-inline-block my-auto mx-2">شخص رائع</h6>
                       </div>
                       <div class="post-content py-3"> 
                         <p class="pb-3">كلام عربي وانجليزي متداخل togther وهذا هو قمة الإعجاز العلمي </p>
@@ -151,13 +168,13 @@
                       <div class="post-header">
                         <div class="dropdown float-left">
                           <button class="btn fas fa-ellipsis-h" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-                          <div class="dropdown-menu animated flipInX faster mt-4" aria-labelledby="dropdown">
+                          <div class="dropdown-menu animated pulse faster mt-4" aria-labelledby="dropdown">
                             <button class="dropdown-item text-right" type="button">أحظر كاتب المقال</button>
                             <button class="dropdown-item text-right" type="button">حفظ </button>
                             <button class="dropdown-item text-right" type="button">تابع كاتب المقال</button>
                           </div>
                         </div><img class="rounded-circle img-fluid" src="https://placeimg.com/640/480/any" width="75">
-                        <h6 class="d-inline-block my-auto mx-2">الكلب هوهو</h6>
+                        <h6 class="d-inline-block my-auto mx-2">شخص رائع</h6>
                       </div>
                       <div class="post-content py-3">
                         <p> هذا المقال هو نموذج لمقال من الممكن أن يوجد في الواقع وهو عبارة عن مقال طويل للغاية مرفق به صورة وهذا من الأشياء التي من الممكن أن تكون متحدية لبعض المطورين لكن نحن المطورين الممتازين يمكننا التعامل مع مثل هذه الأمور ببساطة لأنها أمور تافهة ولأننا من ابرع الناس في هذا المجال هههههه </p><img class="img-fluid mt-3" src="https://placeimg.com/640/580/any">
@@ -175,13 +192,13 @@
                       <div class="post-header">
                         <div class="dropdown float-left">
                           <button class="btn fas fa-ellipsis-h" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-                          <div class="dropdown-menu animated flipInX faster mt-4" aria-labelledby="dropdown">
+                          <div class="dropdown-menu animated pulse faster mt-4" aria-labelledby="dropdown">
                             <button class="dropdown-item text-right" type="button">أحظر كاتب المقال</button>
                             <button class="dropdown-item text-right" type="button">حفظ </button>
                             <button class="dropdown-item text-right" type="button">تابع كاتب المقال</button>
                           </div>
                         </div><img class="rounded-circle img-fluid" src="https://placeimg.com/640/480/any" width="75">
-                        <h6 class="d-inline-block my-auto mx-2">الكلب هوهو</h6>
+                        <h6 class="d-inline-block my-auto mx-2">شخص رائع</h6>
                       </div>
                       <div class="post-content py-3">
                         <p> هذا المقال هو نموذج لمقال من الممكن أن يوجد في الواقع وهو عبارة عن مقال طويل للغاية مرفق به صورة وهذا من الأشياء التي من الممكن أن تكون متحدية لبعض المطورين لكن نحن المطورين الممتازين يمكننا التعامل مع مثل هذه الأمور ببساطة لأنها أمور تافهة ولأننا من ابرع الناس في هذا المجال هههههه </p><img class="img-fluid mt-3" src="https://placeimg.com/640/580/any">
@@ -329,7 +346,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/medium-editor@latest/dist/js/medium-editor.min.js"></script>
-    <script src="js/home.js"></script>
-    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-bs4.js"></script>
+    <script src="./js/ar.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
