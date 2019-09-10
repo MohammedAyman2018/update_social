@@ -76,8 +76,12 @@ $(document).ready(function () {
 
 
     // Images on modal
-    $('img').click(e => {
+    $('img').click(function (e)  {
         e.preventDefault();
         
+        var source = $(this).attr('src');
+        $('#img-modal img').attr('src', source);
+
+        $('#img-modal').modal('show');
     });
 });

@@ -21,13 +21,14 @@ html(lang="en")
 
     .container
       .row
-          include ../components/add_post.pug
+          include ../components/posts/add_post.pug
       .row
           include ../components/tags.pug
-          include ../components/posts.pug
+          include ../components/posts/posts.pug
           +posts("col-md-7 col-lg-5", "شخص رائع")
           include ../components/dashboard.pug
     include ../components/general/toast.pug
+    include ../components/general/img-modal.pug
         
     // ================= scripts =================
     script(src="https://kit.fontawesome.com/7ccf14bcd9.js")
